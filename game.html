@@ -11,7 +11,7 @@ var ballSpeedY = 4; // to control ball speed(vertical).
 var player1score=0;
 var player2score=0;
 const WINNING_SCORE=3;
-
+//Setting the winning display of the screen to null
 var showingWinScreen = false;
 
 var paddle1Y = 250;
@@ -33,7 +33,7 @@ function calculateMousePos(evt) {
 		};
 		
 }
-
+//Handling the mouse screen.
 function handleMouseClick(evt) {
 	if(showingWinScreen) {
 		player1score=0;
@@ -171,7 +171,7 @@ function drawEverything() {
 	canvasContext.fillText(player2score,canvas.width-100,100);
 
 }
-
+//Creating the theme of the Object.
 function colorcircle(centerX,centerY,radius, drawColor) {
 		canvasContext.fillStyle = drawColor;
 		canvasContext.beginPath();
